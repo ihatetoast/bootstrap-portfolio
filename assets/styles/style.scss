@@ -112,16 +112,50 @@ MAIN CONTENT AND ASIDE
   margin-top: 1em;
   margin-bottom: 1em;
   box-shadow: inset 0px 0px 25px -2px $ltblue;
+  padding: 1em;
+}
+
+.title{
+  border-bottom: 2px solid $ltblue;
+  margin-bottom: 1em;
 }
 /******************
 *******************
 MAIN CONTENT
 *******************
 *******************/
-#aboutImg {
+.imgFrame {
+  border: 2px solid $deepnavy;
+  border-radius: 2%;
+  background-color: $purplenavy;
+  padding: 0.5em;
+  margin: 0 auto;
   margin-bottom: 1em;
+  img{
+    width: 100%;
+  }
+  @media screen and (min-width: 520px){
+     width: 80%;
+  }
+  @media screen and (min-width: 768px){
+     width: 40%;
+     float: left;
+     margin-right: 1.5em;
+     margin-bottom: 1em;
+  }
 }
 
+.about {
+  padding: 1em;
+  p {
+     @media screen and (min-width: 520px){
+      margin: 0 2em 1em 2em;
+     }
+     @media screen and (min-width: 768px){
+     margin: 0 1em 1em 1em;
+  }
+  }
+}
 
 /******************
 *******************
@@ -130,14 +164,38 @@ ASIDE
 *******************/
 .asideContent {
   margin-top: 1em;
+  @media screen and (min-width: 992px){
+    padding: 1em 2em;
+  }
 }
 .socialMedia {
   margin: 2em 0em;
+  text-align: center;
+  @media screen and (min-width: 400px){
+    text-align: left;
+  }
+  @media screen and (min-width: 768px){
+    text-align: center;
+  }
 }
 .socialMediaIcons li {
   display:inline;
   padding: 0 0.5em;
 }
+.icons{
+  margin: -0.1em;
+  @media screen and (min-width: 430px){
+    margin: 0em;
+  }
+  @media screen and (min-width: 768px){
+    margin: 0.5em;
+  }
+  @media screen and (min-width: 992px){
+    margin: 0.25em;
+  }
+
+}
+
 #gitHub {color: #000;}
 #dribbble {color: #ea4c89; }
 #linkedIn {color: #007bb5; }
@@ -145,6 +203,12 @@ ASIDE
 #wordPress {color: #21759b;}
 #codePen {color: #000;}
 
+
+/******************
+*******************
+FOOTER
+*******************
+*******************/
 .footer {
   position: absolute;
   top: 110%;
